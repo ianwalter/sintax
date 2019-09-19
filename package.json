@@ -4,6 +4,7 @@
   "description": "🦅  cli syntax highlighting: any function - any object - 176 languages",
   "main": "index.js",
   "scripts": {
+    "lint": "eslint .",
     "test": "nyc  --reporter=html --reporter=lcov ava",
     "coveralls": "cat ./coverage/lcov.info | ./node_modules/.bin/coveralls -v"
   },
@@ -28,6 +29,8 @@
     "super-split": "^1.1.0"
   },
   "devDependencies": {
+    "@ianwalter/eslint-config": "^2.4.0",
+    "@ianwalter/renovate-config": "^1.2.0",
     "ava": "^0.25.0",
     "coveralls": "^3.0.0",
     "nyc": "^11.6.0",
@@ -241,5 +244,16 @@
   ],
   "author": "F1LT3R",
   "license": "MIT",
-  "homepage": "https://github.com/f1lt3r/chromafi#readme"
+  "homepage": "https://github.com/f1lt3r/chromafi#readme",
+  "eslintConfig": {
+    "root": true,
+    "extends": [
+      "@ianwalter"
+    ]
+  },
+  "renovate": {
+    "extends": [
+      "@ianwalter"
+    ]
+  }
 }
