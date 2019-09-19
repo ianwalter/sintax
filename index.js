@@ -279,7 +279,7 @@ const cropPadAndNumber = (text, opts) => {
     if (opts.tabsToSpaces === false) {
       lineOutput = lineNo + line
     } else if (typeof opts.tabsToSpaces === 'number') {
-      lineOutput = lineNo + padLine(runLengthLine, opts.codePad)
+      lineOutput = lineNo + padLine(line, opts.codePad)
     }
 
     output += lineOutput + '\n'
