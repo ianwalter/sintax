@@ -7,11 +7,6 @@
     "test": "nyc  --reporter=html --reporter=lcov ava",
     "coveralls": "cat ./coverage/lcov.info | ./node_modules/.bin/coveralls -v"
   },
-  "husky": {
-    "hooks": {
-      "pre-commit": "yarn test"
-    }
-  },
   "repository": {
     "type": "git",
     "url": "git@github.com:f1lt3r/chromafi.git"
@@ -35,7 +30,6 @@
   "devDependencies": {
     "ava": "^0.25.0",
     "coveralls": "^3.0.0",
-    "husky": "^0.14.3",
     "nyc": "^11.6.0",
     "xo": "^0.20.3"
   },
