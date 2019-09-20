@@ -9,7 +9,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git@github.com:ianwalter/sintax.git"
+    "url": "git+ssh://git@github.com/ianwalter/sintax.git"
   },
   "files": [
     "index.js"
@@ -58,5 +58,8 @@
     "extends": [
       "@ianwalter"
     ]
+  },
+  "bugs": {
+    "url": "https://github.com/ianwalter/sintax/issues"
   }
 }
