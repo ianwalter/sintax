@@ -15,13 +15,13 @@
     "index.js"
   ],
   "dependencies": {
+    "@ianwalter/merge": "^5.0.0",
     "ansi-mark": "^1.0.0",
     "ansi-regex": "^3.0.0",
     "array-uniq": "^1.0.3",
     "camelcase": "^4.1.0",
     "chalk": "^2.3.2",
     "cheerio": "^1.0.0-rc.2",
-    "deepmerge": "^2.1.0",
     "detect-indent": "^5.0.0",
     "he": "^1.1.1",
     "highlight.js": "^9.12.0",
